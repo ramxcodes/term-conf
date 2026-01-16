@@ -1,0 +1,153 @@
+# ==========================================
+# 🌙 Ghostty Glass Morphism Configuration
+# ==========================================
+
+# ============ THEME & COLORS ============
+
+# Glass morphism effect - transparency + blur
+background-opacity = 0.85
+background-blur = 25
+
+# Custom Tokyo Night-inspired colors
+background = #1a1b26
+foreground = #c0caf5
+
+# Tokyo Night palette colors for full experience
+palette = 0=#15161e
+palette = 1=#f7768e
+palette = 2=#9ece6a
+palette = 3=#e0af68
+palette = 4=#7aa2f7
+palette = 5=#bb9af7
+palette = 6=#7dcfff
+palette = 7=#a9b1d6
+palette = 8=#414868
+palette = 9=#f7768e
+palette = 10=#9ece6a
+palette = 11=#e0af68
+palette = 12=#7aa2f7
+palette = 13=#bb9af7
+palette = 14=#7dcfff
+palette = 15=#c0caf5
+
+# Enhance the glass effect with subtle colors
+cursor-color = #bb9af7
+cursor-style = block
+cursor-style-blink = true
+cursor-opacity = 0.9
+
+# Selection colors for better contrast
+selection-background = #33467c
+selection-foreground = #c0caf5
+
+# ============ TYPOGRAPHY ============
+# Use modern programming fonts with ligatures
+font-family = "JetBrains Mono Nerd Font"
+font-family = "JetBrains Mono"
+font-family = "Fira Code"
+font-family = "SF Mono"
+font-size = 14
+
+# Enable programming ligatures for productivity
+font-feature = +calt,+liga,+dlig
+
+# Font adjustments for crisp rendering
+font-thicken = true
+adjust-cell-height = 2
+
+# ============ WINDOW STYLING ============
+# Aesthetic window settings
+window-padding-x = 20
+window-padding-y = 16
+window-padding-balance = true
+window-padding-color = extend
+
+# Default window size - 120 columns x 30 rows
+window-width = 120
+window-height = 30
+
+# Window appearance and behavior
+window-decoration = true
+window-theme = dark
+window-colorspace = srgb
+window-inherit-working-directory = true
+window-inherit-font-size = true
+window-save-state = always
+
+# macOS specific glass morphism enhancements
+macos-titlebar-style = "transparent"
+macos-window-shadow = true
+macos-option-as-alt = true
+
+# ============ SHELL INTEGRATION ============
+# Enhanced terminal experience - CRITICAL for auto-suggestions
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# Ensure proper terminal behavior
+confirm-close-surface = false
+quit-after-last-window-closed = false
+
+# ============ PRODUCTIVITY FEATURES ============
+# Mouse and interaction
+mouse-hide-while-typing = true
+cursor-click-to-move = true
+focus-follows-mouse = false
+
+# Clipboard enhancements
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = true
+clipboard-trim-trailing-spaces = true
+click-repeat-interval = 500
+
+# Better scrolling
+scrollback-limit = 100000
+mouse-scroll-multiplier = 3
+
+# ============ ADVANCED AESTHETICS ============
+# Smooth cursor and animations
+alpha-blending = linear-corrected
+minimum-contrast = 1.5
+
+# Split window styling for productivity
+unfocused-split-opacity = 0.7
+split-divider-color = #414868
+
+# ============ KEYBINDINGS ============
+# Productivity keybindings
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+keybind = cmd+n=new_window
+keybind = cmd+shift+t=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+1=goto_tab:1
+keybind = cmd+2=goto_tab:2
+keybind = cmd+3=goto_tab:3
+keybind = cmd+4=goto_tab:4
+keybind = cmd+5=goto_tab:5
+
+
+# Glass morphism toggle
+keybind = cmd+shift+g=toggle_window_decorations
+
+
+# ============ PERFORMANCE ============
+# Smooth rendering
+window-vsync = true
+resize-overlay = after-first
+resize-overlay-position = center
+
+# ============ MISC ENHANCEMENTS ============
+# Better link handling
+link-url = true
+
+# App behavior
+app-notifications = no-clipboard-copy
+
+# Terminal features
+bold-is-bright = true
+title-report = false
+
+# Working directory
+working-directory = inherit
